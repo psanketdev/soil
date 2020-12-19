@@ -27,12 +27,28 @@ include('config.php');
 							</div>
 							<hr>
 							<h6 class="fs-14 mb-3">Fruits & vegetables</h6>
-							<ul class="list-group">
-								<li class="list-group-item"><a href="#FIXME" title="Thalis" class="text-dark font-weight-normal fs-14"><span>Thalis</span></a></li>
-								<li class="list-group-item"><a href="#FIXME" title="Bowls" class="text-dark font-weight-normal fs-14"><span>Bowls</span></a></li>
+							<ul class="list-group" id="category">
+							<?php $result = "SELECT * FROM `products`";  //echo $result;
+                    				$data = mysqli_query($DBcon,$result);
+                    				$sr = 1;
+                    				while($products = mysqli_fetch_array($data))
+                    				{
+										
+									?>
+										<li class="list-group-item"><a href="#FIXME" title="Thalis" class="text-dark font-weight-normal fs-14">
+									<span>
+										
+										<?php 		
+										echo $products['Category']; ?>
+									</span></a></li>
+                         			<?php	
+                    				}
+							?>
+								
+								<!-- <li class="list-group-item"><a href="#FIXME" title="Bowls" class="text-dark font-weight-normal fs-14"><span>Bowls</span></a></li>
 								<li class="list-group-item"><a href="#FIXME" title="Tea Cups Sets" class="text-dark font-weight-normal fs-14"><span>Tea Cups Sets</span></a></li>
 								<li class="list-group-item"><a href="#FIXME" title="Flowers Plot" class="text-dark font-weight-normal fs-14"><span>Flowers Plot</span></a></li>
-								<li class="list-group-item"><a href="#FIXME" title="Jugs" class="text-dark font-weight-normal fs-14"><span>Jugs</span></a></li>
+								<li class="list-group-item"><a href="#FIXME" title="Jugs" class="text-dark font-weight-normal fs-14"><span>Jugs</span></a></li> -->
 							</ul>
 							
 						</li>
@@ -67,7 +83,7 @@ include('config.php');
 						<li class="list-group-item px-2">
 							<h5 class="fs-14 mb-3">Price</h5>
 								<hr>
-							<ul class="list-group checkbox_list filter-options">
+							<!-- <ul class="list-group checkbox_list filter-options">
 							<li class="form-check form-check-inline mb-1">
 								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck1">
 								<label class="form-check-label text-dark fs-14" for="exampleCheck1">less than Rs 20</label>
@@ -84,8 +100,15 @@ include('config.php');
 								<input type="checkbox" class="form-check-input form-control-sm" id="exampleCheck4">
 								<label class="form-check-label text-dark fs-14" for="exampleCheck4">More than Rs 500</label>
 							</li>
-								
-							</ul>
+							
+							</ul> -->
+							<form>
+								<div class="form-group">
+									<label for="formControlRange">Example Range input</label>
+									<input type="range" class="form-control-range" id="formControlRange" min="1" max="100" value="50">
+									<span class="rangeValueText">50</span>
+								</div>
+							</form>
 						</li>
 					</ul>
 					<ul class="list-group">
