@@ -69,7 +69,7 @@ $('.card-group').slick({
       debugger;
     $.ajax({
       type:'GET',
-      url: "http://oursoil.esy.es/productsjson.php",
+      url: "demo.json",
       headers: {  'Access-Control-Allow-Origin': '*' },
       type: 'json',
     }).done(function(data){
