@@ -2,6 +2,7 @@
 include('header.php');
 include('config.php');
 ?>
+ 
     </div>
     <!--<div data-bs-parallax-bg="true" style="background-image: url(&quot;assets/img/clay%20pot%20import.jpg&quot;);background-position: center;background-size: cover;width: 100%;height: 600px;"></div>-->
     <br><br><br>
@@ -21,7 +22,7 @@ include('config.php');
 						<li class="list-group-item px-2">
 							<h5 class="fs-16 mb-3">Categories</h5>
 								<div class="form-group search">
-								<input type="text" name="" id="" placeholder="Search Product Here.." class="form-control form-control-sm">
+								<input type="text" name="" id="" placeholder="Search Product Here.." class="form-control form-control-sm search">
 								<i class="fa fa-search filter-search pl-3" aria-hidden="true"></i>	
 							</div>
 							<hr>

@@ -1,3 +1,7 @@
+
+
+
+
 $(function () {
   
   // function for fixed header
@@ -35,7 +39,7 @@ $('.card-group').slick({
   $('input.form-control').blur(function () {
     $(this).parent().find('.error-text').show();
   });
-  
+
 });
 
   // fliters
@@ -48,6 +52,37 @@ $('.card-group').slick({
   })
 
 
+  $( document ).ready(function() {
+  //   $.get("http://oursoil.esy.es/productsjson.php").done(function (data) {
+  //     console.log(data);
+  // });
+  
+    console.log( "ready!" );
+    $(".search").keyup(function(){
+      debugger
+      var searchValue = this.value;
+      console.log(searchValue);
+    });
+
+
+    $( document ).ready(function() {
+      debugger;
+    $.ajax({
+      type:'GET',
+      url: "http://oursoil.esy.es/productsjson.php",
+      headers: {  'Access-Control-Allow-Origin': '*' },
+      type: 'json',
+    }).done(function(data){
+      var myObj = data;
+      var tmpData = JSON.parse(myObj);
+      console.log(tmpData);
+    });
+  });
+
+
+});
+
 
 
   
+

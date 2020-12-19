@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" /> 
   <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="assets/vendor/slick/slick-theme.css">
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
