@@ -3,9 +3,8 @@ include('header.php');
 
 ?>
     <ol class="breadcrumb" style="margin-top: 60px;">
-        <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
-        <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
-        <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
+        <li class="breadcrumb-item"><a href="index.php"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a href="checkout.php"><span>Checkout</span></a></li>
     </ol>
 
     <div class="row my-5">

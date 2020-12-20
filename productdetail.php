@@ -5,9 +5,8 @@ $id = $_GET['id'];
 
 ?>
     <ol class="breadcrumb" style="margin-top: 60px;">
-        <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
-        <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
-        <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
+        <li class="breadcrumb-item"><a href="index.php"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a href="productdetail.php"><span>Product Details</span></a></li>
     </ol>
 
 <?php
@@ -20,7 +19,7 @@ $id = $_GET['id'];
 
     <!-- product details section start-->
     <div class="row my-5">
-        <div class="col-md-9 pl-0">
+        <div class="col-md-9 pl-0 mt-3">
             <div class="wrapper">
                 <div class="container">
                     <div class="row">
@@ -64,7 +63,7 @@ $id = $_GET['id'];
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
             <div>
                 <h2 class="font-weight-normal mb-3 fs-20">Reviews</h2>
                 <div><i class="fa fa-star" style="margin: 5px;color: #ffc940;"></i><i class="fa fa-star" style="margin: 5px;color: #ffc940;"></i><i class="fa fa-star" style="margin: 5px;color: #ffc940;"></i><i class="fa fa-star" style="margin: 5px;"></i>

@@ -3,9 +3,8 @@ include('header.php');
 
 ?>
     <ol class="breadcrumb" style="margin-top: 60px;">
-        <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
-        <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
-        <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
+        <li class="breadcrumb-item"><a href="index.php"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a href="shoppingcart.php"><span>Shopping Cart</span></a></li>
     </ol>
     <h2 class="text-center py-5">Shopping Cart</h2>
      <div class="row pb-5">
@@ -124,7 +123,7 @@ include('header.php');
         <div class="col-md-5 bg-light h-100 py-3 px-2">
             <div>
                 <h2 class="mb-3 font-weight-normal">The Total Amount of</h2>
-                <div class="table-responsive table-hover">
+                <div class="table-responsive table-hover shoppingCartTable">
                     <table class="table">
                         <thead>
                             <tr></tr>

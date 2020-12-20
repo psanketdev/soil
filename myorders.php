@@ -3,42 +3,16 @@ include('header.php');
 ?>
    <section>
         <ol class="breadcrumb"  style="margin-top: 60px;">
-            <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
-            <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
-            <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
+            <li class="breadcrumb-item"><a href="index.php"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="myorders.php"><span>My Ordrs</span></a></li>
         </ol>
         <div class="row py-5">
-            <div class="col-md-3">
-                <h2 class="mb-3 font-weight-normal">Filter</h2>
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text">Addon</span></div><input class="form-control" type="text">
-                        <div class="input-group-append"></div>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text">Addon</span></div><input class="form-control" type="text">
-                        <div class="input-group-append"></div>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text">Addon</span></div><input class="form-control" type="text">
-                        <div class="input-group-append"></div>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text">Addon</span></div><input class="form-control" type="text">
-                        <div class="input-group-append"></div>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-prepend"><span class="input-group-text">Addon</span></div><input class="form-control" type="text">
-                        <div class="input-group-append"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-9">
+            <div class="col-12">
                 <div class="d-flex justify-content-between w-100 mb-3">
                     <h2 class="font-weight-normal">My Orders</h2>
-                    <div class="form-group mb-0 pull-right col-lg-4">
-                        <input type="text" class="search form-control" placeholder="Search by typing here..">
-                    </div>
+                   <!--  <div class="form-group mb-0 pull-right col-lg-4">
+                        <input type="text" class="search form-control" placeholder="Search Here..">
+                    </div> -->
                 </div>
                 <div class="col-md-12 table-responsive search-table-col pl-0">     
                         <table class="table table-bordered table-hover">

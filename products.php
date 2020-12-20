@@ -7,12 +7,11 @@ include('config.php');
     <br><br><br>
     <section class="new-products">
         <ol class="breadcrumb" style="margin-top: -12px;">
-            <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
-            <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
-            <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
+            <li class="breadcrumb-item"><a href="index.php"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="products.php"><span>Products</span></a></li>
         </ol>
         <div class="row py-5">
-             <div class="col-md-3">
+             <div class="col-md-3 mt-3">
                <div class="mb-3">
                   <h2 class="text-dark font-weight-normal">Filters</h2>
                </div>
@@ -114,7 +113,7 @@ include('config.php');
 					</ul>
 					</div>
               </div>
-            <div class="col-md-9">
+            <div class="col-md-9 mt-3">
                 <section class="new-products-cards">
                   <div class="container">
                     <div class="mb-3">

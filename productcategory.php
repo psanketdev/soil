@@ -8,9 +8,8 @@ $ParentCategory = $_GET['ParentCategory'];
 
     <section class="new-products">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#!"><span>Home</span></a></li>
-            <li class="breadcrumb-item"><a href="#!"><span>Library</span></a></li>
-            <li class="breadcrumb-item"><a href="#!"><span>Data</span></a></li>
+            <li class="breadcrumb-item"><a href="index.php"><span>Home</span></a></li>
+            <li class="breadcrumb-item"><a href="productcategory.php"><span>Product Category</span></a></li>
         </ol>
 
     <!-- show producy info start -->

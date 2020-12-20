@@ -146,7 +146,7 @@ include('config.php');
             </div>
             
             
-            <div class="row">
+            <div class="row text-center">
                 <?php
                     $ParentCategory = $rootcategory['CategoryName'];
                     $result = "SELECT * FROM `Category` WHERE `ParentCategory` = '$ParentCategory' LIMIT 4";
