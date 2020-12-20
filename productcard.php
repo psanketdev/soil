@@ -1,10 +1,11 @@
  <li>
-      <div class="card">
-                      <figure>
+      <div class="card product_card">
+                     <figure>
                           <img class="img-fluid img-thumbnail" alt="" src="<?php echo $products['Thumbnail'];?>">
                       </figure>
                       <div class="card-body">
-                        <div class="d-flex mb-2">
+                     
+                        <div class="d-flex mb-2 ">
                               <?php
                             $Rating = $products['Rating'];
                             
@@ -42,11 +43,12 @@
                             </a>
                              <input type="hidden" name="quantity" value="1" class="form-control" />
                         <input type="hidden" name="id" value="<?php echo $products["ProdcutID"]; ?>" />
-                        <input type="hidden" name="hidden_name" value="<?php echo $products["ProdctName"]; ?>" />
+                        <input type="hidden" name="hidden_name"  value="<?php echo $products["ProdctName"]; ?>" />
+                        <input type="hidden" name="hidden_name" value="<?php echo $products["Category"]; ?>" />
 
-                        <input type="hidden" name="hidden_price" value="<?php echo $products["Cost"]; ?>" />
-                        
-
+                        <input type="hidden" name="hidden_price" class="hidden_price_cost" value="<?php echo $products["Cost"]; ?>" />
+                        <input type="hidden" name="hidden_price_old" class="hidden_price_old" value="<?php echo $products["OldCost"]; ?>" />
+                       
             
                         <!--<input   class="btn btn-outline-success btn-sm"  value="submit" name="submit">-->
                             <button class="btn btn-outline-success btn-sm" type="submit">
@@ -55,5 +57,5 @@
                             </form>
                         </div>
                       </div>
-                    </div>
-                </li> 
+            </div>
+    </li> 
